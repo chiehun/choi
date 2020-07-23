@@ -1,8 +1,11 @@
 
-public class WifeClass {
+public class WifeClass extends Thread{
 
 	public WifeClass() {
-		// TODO Auto-generated constructor stub
+		}
+	public void run() {
+		MainClass.myBank.minusMoney(1000);   // 은행 내부 출금 처리 시간 0.2초
+		
+	System.out.println("minusMoney(1000)" + MainClass.myBank.getMoney());
 	}
-
 }
