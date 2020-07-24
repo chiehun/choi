@@ -17,7 +17,7 @@ public class BankClass {
 		} catch (InterruptedException e) {
 			System.out.println(e.getMessage() +"입금 실패");
 		}
-		this.saveMoney( save +m);
+		this.setMoney(save+m);
 	}
 	public void minusMoney(int minus){
 		int m =this.money;
@@ -26,7 +26,7 @@ public class BankClass {
 		} catch (InterruptedException e) {
 		System.out.println(e.getMessage()+"출금 실패");
 		}
-		this.minusMoney(minus-m);
+		this.setMoney(m-minus);
 				
 }
 }

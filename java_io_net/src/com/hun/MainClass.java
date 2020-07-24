@@ -1,6 +1,7 @@
 package com.hun;
 
 import java.net.InetAddress;
+import java.net.URL;
 import java.net.UnknownHostException;
 
 public class MainClass {
@@ -9,11 +10,16 @@ public class MainClass {
 		String site = "https://www.naver.com//index.html";
 		
 		URLReader homePage = new URLReader(site);
-		homePage.printConnectiongInfo();//정보 
+		//homePage.printConnectiongInfo();//정보 
 		
 		System.out.println("========");
 		
 		homePage.printage(); //페이지 출력해주는 메서드
+		
+		URLReader URLR = new URLReader();
+		URL site1=URLR.url;
+		URLR.printConnectiongInfo(site1);
+		
 			// 내 컴퓨터
 		/**try {
 			InetAddress my = InetAddress.getLocalHost();
@@ -21,7 +27,7 @@ public class MainClass {
 			inet.printInfo();
 			
 			//www.narer.com
-			InetAddress naver = InetAddress.getByName("www.narer.com");
+			InetAddress naver = InetAddress.getByName("www.naver.com");
 			//naver.로 부터
 			inet.setInetAddress(naver); // 도메이놋녀
 			inet.printInfo();

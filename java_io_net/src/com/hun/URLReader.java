@@ -9,7 +9,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class URLReader {
-	public URL url;
+	public static URL url;
 
 	public URLReader() {
 
@@ -42,7 +42,7 @@ public class URLReader {
 	}
 
 	// 접속한 페이지의 정보를 간단히 표준출력에 출력
-	public void printConnectiongInfo() {
+	public void printConnectiongInfo(URL site1) {
 
 		try {
 			URLConnection conn = url.openConnection();

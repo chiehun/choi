@@ -16,6 +16,7 @@ public class MainClass {
 			System.out.println(e.getMessage());
 		}
 	m.start();
+	w.start();
 	}
 
 }

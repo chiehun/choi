@@ -24,7 +24,6 @@ public class MylnputStreamReader {
 			// 현재 InputStreamReader의 인코딩 방식 출력
 			System.out.println(isr.getEncoding());
 			System.out.println();
-			
 			// 한 줄 씩 읽어 출력
 			while ((line = br.readLine())!= null) {
 				System.out.println(line);
